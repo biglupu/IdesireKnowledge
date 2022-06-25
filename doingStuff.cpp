@@ -21,8 +21,21 @@ void doingStuff(string yksi, string kaksi)
 void doingStuff(int argCee, string yksi, string kaksi)
 {
 	//should run koska 3 parametria
-	cout << "Argument count, " << argCee << endl;
+	cout << "Argument count, " << argCee << ": ";
 	cout << yksi << " " << kaksi;
 	printTest();
 
+}
+
+void doingStuff(int argCee, string yksi)
+{
+	if (yksi == "-help")
+	{
+		helpFunction();
+	}
+
+	else if (yksi == "help")
+	{
+		helpFunction();
+	}
 }
