@@ -3,6 +3,7 @@
 #include <string>
 
 
+
 using std::cout;
 using std::endl;
 using std::string;
@@ -23,6 +24,17 @@ void doingStuff(int argCee, string yksi, string kaksi)
 	//should run koska 3 parametria
 	cout << "Argument count, " << argCee << endl;
 	cout << yksi << " " << kaksi;
+	Ffollowing(argCee,yksi,kaksi);
+
+}
+
+#if 0
+void doingStuff(int argCee, string yksi, string kaksi)
+{
+	//should run koska 3 parametria
+	cout << "Argument count, " << argCee << endl;
+	cout << yksi << " " << kaksi;
 	printTest();
 
 }
+#endif

@@ -10,6 +10,8 @@ Still need to find out and most importantly internalize what are the benefits of
 
 #include <iostream>
 #include "doingStuff.h"
+#include <string>
+
 using namespace std;
 
 

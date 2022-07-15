@@ -1,6 +1,7 @@
 #pragma once
-#include<string>
+#include <string>
 #include "printTest.h"
+#include "following.h"
 
 using std::string;
 
