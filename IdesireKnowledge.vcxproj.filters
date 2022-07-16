@@ -24,12 +24,18 @@
     <ClCompile Include="printTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="following.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="doingStuff.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="printTest.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="following.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
