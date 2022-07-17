@@ -11,7 +11,7 @@ using std::ifstream;
 
 
 
-void Ffollowing(int argCee, string yksi, string kaksi)
+void Ffollowing(int argCee, string yksi, string kaksi, string kolme)
 {
     ifstream inputFile;
     string filename;
@@ -23,8 +23,8 @@ void Ffollowing(int argCee, string yksi, string kaksi)
     if (argCee > 1)
     {
 
-        search_w = yksi;
-        filename = kaksi;
+        search_w = kaksi;
+        filename = kolme;
 
         inputFile.open(filename);
         if (inputFile)
@@ -33,6 +33,7 @@ void Ffollowing(int argCee, string yksi, string kaksi)
             {
                 if (line.find(search_w) != -1)
                 {
+                    cout << "\nString \"" << search_w << "\" found on the line:\n";
                     cout << line << endl << endl;
                     found = 1;
 

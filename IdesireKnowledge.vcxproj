@@ -145,6 +145,7 @@
     <ClCompile Include="printTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DocumentationOnly.h" />
     <ClInclude Include="doingStuff.h" />
     <ClInclude Include="following.h" />
     <ClInclude Include="printTest.h" />

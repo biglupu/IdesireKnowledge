@@ -1,10 +1,4 @@
-/* Documentation:
 
-main ----- doingStuff.h ------ printTest.h
-
-Still need to find out and most importantly internalize what are the benefits of using Classes and that whole Public/Private/Protected paradigm again
-
-*/
 
 
 
@@ -17,14 +11,36 @@ using namespace std;
 //Comment here to see what happens
 
 int main(int argc, char** argv){
-	
-	if (argc > 1)
+
+	if (argc > 4)
 	{
-		doingStuff(argc, argv[1], argv[2]); //here we choose which "doingStuff" is being ran. Function overloading, maybe used, maybe not.
+		cout << "\nToo many arguments, seizing operations";
+		return 0;
+	}
+	
+
+	else if (argc == 2)
+	{
+		doingStuff(argc, argv[1]); //here we choose which "doingStuff" is being ran. Function overloading, maybe used, maybe not.
+
+	}
+
+#if 0
+
+	else if (argc == 3)
+	{
+		doingStuff(argc, argv[1]); //here we choose which "doingStuff" is being ran. Function overloading, maybe used, maybe not.
+
+	}
+#endif
+
+	else if (argc == 4)
+	{
+		doingStuff(argc, argv[1], argv[2], argv[3]); //here we choose which "doingStuff" is being ran. Function overloading, maybe used, maybe not.
 
 	}
 	else
-		cout << "no arguments, going to sleep";
+		cout << "No arguments, going back to sleep";
 
 	return 0;
 }

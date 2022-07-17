@@ -4,4 +4,4 @@
 #include <iostream>
 using namespace std;
 
-void Ffollowing(int,string,string);
+void Ffollowing(int,string,string,string);

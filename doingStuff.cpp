@@ -9,7 +9,7 @@ using std::endl;
 using std::string;
 
 
-
+#if 0
 void doingStuff(string yksi, string kaksi)
 
 {
@@ -19,22 +19,31 @@ void doingStuff(string yksi, string kaksi)
 
 }
 
-void doingStuff(int argCee, string yksi, string kaksi)
-{
-	//should run koska 3 parametria
-	cout << "Argument count, " << argCee << endl;
-	cout << yksi << " " << kaksi;
-	Ffollowing(argCee,yksi,kaksi);
-
-}
-
-#if 0
-void doingStuff(int argCee, string yksi, string kaksi)
-{
-	//should run koska 3 parametria
-	cout << "Argument count, " << argCee << endl;
-	cout << yksi << " " << kaksi;
-	printTest();
-
-}
 #endif
+
+void doingStuff(int argCee, string yksi, string kaksi, string kolme)
+{
+	//should run koska 3 parametria
+	cout << "Argument count, " << argCee-1 << endl;
+	cout << "Command line arguments: \n";
+	cout << yksi << " " << kaksi << " " << kolme <<endl;
+
+
+	if (yksi == "following")
+		Ffollowing(argCee,yksi,kaksi,kolme);
+
+
+}
+
+
+void doingStuff(int argCee, string yksi)
+{
+	//should run koska 3 parametria
+	cout << "Argument count, " << argCee-1 << endl;
+	cout << yksi <<endl;
+	if (yksi == "help")
+		printTest();
+	else
+		cout << "???\nInvalid command";
+
+}
