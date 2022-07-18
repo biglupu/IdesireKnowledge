@@ -9,6 +9,8 @@ Still need to find out and most importantly internalize what are the benefits of
 
 I am starting to get an idea on the structure, although slowly
 
+YOU STUPID DUMB DUMB, "FOLLOWING" WAS SEACH WORD!
+
 
 
 

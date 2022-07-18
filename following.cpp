@@ -10,7 +10,6 @@ using std::ifstream;
 
 
 
-
 void Ffollowing(int argCee, string yksi, string kaksi, string kolme)
 {
     ifstream inputFile;
